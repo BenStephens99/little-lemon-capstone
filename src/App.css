@@ -15,7 +15,6 @@ header {
   align-items: center;
   padding: 0 5vw;
   gap: 10vw;
-
 }
 
 header img {
@@ -181,3 +180,57 @@ footer>div {
   display: none;
 }
 
+@media screen and (max-width: 1000px) {
+  .specials {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .booking-form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    border: none;
+  }
+
+  .booking-form {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .specials {
+    grid-template-columns: 1fr;
+  }
+
+  .review {
+    width: 80%;
+  }
+
+  .banner {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 1em;
+    padding: 1em;
+  }
+
+  header img {
+    height:50px;
+  }
+
+  .booking-form {
+    width: 80vw;
+    height: auto;
+  }
+
+  .booking-form fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    border: none;
+  }
+}
